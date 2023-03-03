@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록태그</title>
+<style>
+    ul{
+    list-style:none;
+    padding:0;
+    }
+
+    .ul1 li::before {
+    content:"🥳 ";
+    }
+
+    .ul2 li{
+    position:relative;
+    padding-left:1em;
+    }
+
+    .ul2 li::before {
+    content:"";
+    display:block;
+    width:0.3em;
+    height:0.3em;
+    transform:rotate(45deg);
+    border:2px solid royalblue;
+    border-width: 2px 2px 0 0;
+    position:absolute;
+    left:0;
+    top:0.4em;
+    }
+
+</style>
+</head>
+<body>
+    <!-- <div><li>error</li></div> -->
+    <ol type="A" start="2" reversed>
+        <li>첫번째</li>
+        <li>두번째</li>
+        <li>세번째</li>    
+    </ol>
+    <ol>
+        <li type="a" value="8">첫번째</li>
+        <li>두번째</li>
+        <li type ="a">세번째</li>    
+    </ol>
+    <ul>
+        <li>첫번째</li>
+        <li>두번째</li>
+        <li>세번째</li>    
+    </ul>
+
+    <dl>
+        <div>
+            <dt>
+                제목
+            </dt>
+            <dd>설명</dd>
+            <dd>설명</dd>
+            <dd>설명</dd>
+        </div>
+    </dl>
+    <ul class="ul1">
+        <li>첫번째</li>
+        <li>두번째</li>
+        <li>세번째</li>
+        <li>네번째</li>
+        <li>다섯번째</li>
+    </ul>
+    <ul class="ul2">
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam rem, ducimus totam veniam officiis aut libero sed
+    voluptatem iste repudiandae exercitationem laudantium minus impedit et. Suscipit debitis nihil fugit quis.</li>
+    <li>두번째</li>
+    <li>세번째</li>
+    <li>네번째</li>
+    <li>다섯번째</li>
+    </ul>
+</body>
+</html>

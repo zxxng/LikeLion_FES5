@@ -1,0 +1,126 @@
+section {
+    width: 350px;
+    height: 140px;
+    border-style: solid;
+    border-color: gray;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 20px 20px;
+
+}
+
+div:nth-child(1) {
+    width: 318px;
+    height: 40px;
+    background-color: purple;
+}
+
+.text-login {
+    color: white;
+}
+
+.logo {
+    width: 102px;
+    height: 18px;
+    float: left;
+}
+
+/* 수업시간 풀이 */
+@font-face {
+font-family: "SpoqaHanSansNeo-Regular";
+src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+    format("woff");
+font-weight: normal;
+font-style: normal;
+}
+
+* {
+font-family: "SpoqaHanSansNeo-Regular";
+}
+
+body {
+    /* background-color: salmon; */
+}
+
+.login {
+    border: 1px solid #dbdbdb;
+    background: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 18px 16px;
+    width: 350px;
+    margin: auto;
+}
+
+.a11y-hidden {
+    position:absolute;
+	left:-9999px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+/* 검색엔진에 안잡히고 트리에서 사라지고 웹접근성이 떨어짐 스크린에 안읽힘 */
+/* display: none; */
+/* visibility: hidden; */
+/* opacity: 0; */
+
+/* width: 0px;
+height: 0px;
+overflow: hidden; */
+
+/* 악의적인 것으로 해석되어 검색 엔진에 불이익을 줄 수 있음*/
+/* font-size: 0px; */
+/* line-height: 0px; */
+
+.btn-login {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    display: block;
+    background: #711bff;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+}
+
+.btn-login img {
+    height: 18px;
+    vertical-align: middle;
+}
+
+.login-link a {
+    text-decoration: none;
+    color: #767676;
+    vertical-align: middle;
+}
+
+.login-link a:last-child {
+    float: right;
+}
+
+.find-id + span {
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background: #767676;
+    vertical-align: middle;
+    margin: 0 4px;
+}
+
+.find-id, .btn-login {
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: 1em;
+    padding-left: 1.2em;
+}
+
+.find-id {
+    background-image: url(../img/icon-lock.png);
+}
+
+.btn-join {
+    background-image: url(../img/icon-user.png);
+}

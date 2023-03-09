@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout-flex</title>
+<style>
+    div {
+        background-color: royalblue;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header {
+        background-color: skyblue;
+        height: 100px;
+    }
+
+    section {
+        color: white;
+        background-color: navy;
+        width: 70%;
+        height: 200px;
+    }
+
+    aside {
+        background-color: lime;
+        width: 30%;
+        height: 200px;
+    }
+
+    footer {
+        background-color: salmon;
+        height: 100px;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <header>header</header>
+        <div class="flex-container">
+            <section>section</section>
+            <aside>aside</aside>
+        </div>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

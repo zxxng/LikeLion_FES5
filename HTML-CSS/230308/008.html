@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+<style>
+    .grid-container {
+        display: grid;
+        /* grid-template-columns: repeat(2, 1fr 1fr); */
+        /* grid-template-columns: minmax(200px, 300px) minmax(300px, 400px); */
+        /* grid-template-columns: repeat(3, minmax(200px, 300px)); */
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-rows: 15vw 1fr;
+        overflow: hidden;
+        gap: 10px 20px;
+    }
+    .grid-item {
+        background: skyblue;
+        border: 3px solid royalblue;
+        width: 400px;
+        /* grid에 말줄임을 사용하면 오류가 날 수 있다 */
+        /* white-space: nowrap; */
+    }
+
+    .grid-item:first-child {
+        grid-row-start: 1; /* 1 */
+        grid-row-end: 2; /* 3 */
+        grid-column-start: 1; /* 2 */
+        grid-column-end: 4; /* 4 */
+        background: sandybrown;
+    }
+
+    .grid-item:nth-child(2) {
+        grid-row-start: 2; /* 1 */
+        grid-row-end: 4; /* 3 */
+        grid-column-start: 2; /* 2 */
+        grid-column-end: 3; /* 4 */
+        background: salmon;
+    }
+
+    span.grid-item {
+        background: gold;
+    }
+</style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit perspiciatis explicabo vero et consequuntur natus soluta quam unde voluptatibus expedita ullam deleniti, aspernatur sunt, architecto exercitationem est assumenda earum?
+        </div>
+        <div class="grid-item">B</div>
+        <div class="grid-item">C</div>
+        <div class="grid-item">D</div>
+        <div class="grid-item">E</div>
+        <div class="grid-item">F</div>
+    </div>
+    <!-- <span class="grid-container">
+        <span class="grid-item">A</span>
+        <span class="grid-item">B</span>
+        <span class="grid-item">C</span>
+        <span class="grid-item">D</span>
+        <span class="grid-item">E</span>
+        <span class="grid-item">F</span>
+    </span> -->
+</body>
+</html>

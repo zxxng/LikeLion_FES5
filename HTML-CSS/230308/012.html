@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-quiz-area</title>
+<style>
+.item-blue {
+    background: blue;
+    grid-area: a;
+}
+.item-purple {
+    background: purple;
+    grid-area: b;
+
+}
+.item-orange {
+    background: orange;
+    grid-area: c;
+
+}
+.item-yellow {
+    background: yellow;
+    grid-area: d;
+}
+.item-salmon {
+    background: salmon;
+    grid-area: e;
+}
+.item-green {
+    background: green;
+    grid-area: f;
+}
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 2fr 1fr 2fr;
+    gap: 10px;
+    grid-template-areas:
+    "a a b"
+    "c d b"
+    "e f f";
+    width: 500px;
+    height: 500px;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-blue">blue</div>
+        <div class="item-purple">purple</div>
+        <div class="item-orange">orange</div>
+        <div class="item-yellow">yellow</div>
+        <div class="item-salmon">salmon</div>
+        <div class="item-green">green</div>
+    </div>
+</body>
+</html>

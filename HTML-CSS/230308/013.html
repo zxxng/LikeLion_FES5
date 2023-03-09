@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-quiz-number</title>
+    <style>
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 2fr 1fr 2fr;
+    gap: 10px;
+    width: 500px;
+    height: 500px;
+}
+.item-blue {
+    background: blue;
+    grid-area: 1/1/1/span 2;
+}
+.item-purple {
+    background: purple;
+    grid-area: 2/1/3/2;
+}
+.item-orange {
+    background: orange;
+    grid-area: 2/2/3/3;
+}
+.item-yellow {
+    background: yellow;
+    grid-area: 1/3/span 2/3;
+}
+.item-salmon {
+    background: salmon;
+    grid-area: 3/1/4/2;
+}
+.item-green {
+    background: green;
+    grid-area: 3/2/4/4;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-blue">blue</div>
+        <div class="item-purple">purple</div>
+        <div class="item-orange">orange</div>
+        <div class="item-yellow">yellow</div>
+        <div class="item-salmon">salmon</div>
+        <div class="item-green">green</div>
+    </div>
+</body>
+</html>

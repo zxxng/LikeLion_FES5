@@ -2,7 +2,7 @@ body {
     /* background-color: rosybrown; */
 }
 .card-item {
-    width: 288px;
+    /* width: 288px; */
     background-color: #fff;
     box-shadow: 2px 2px 8px rgba(0,0,0);
     border-radius: 8px;
@@ -22,6 +22,9 @@ body {
     padding: 24px 16px 16px;
 }
 
+.card-text .text-1 + p {
+
+}
 .text-1 {
     font-size: 16px;
     white-space: nowrap;
@@ -44,4 +47,18 @@ body {
     text-decoration: underline;
     font-weight: bold;
     font-size: 14px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px 24px;
+    width: min(1224px, 100% - 60px);
+    flex-basis: 288px;
+    margin: auto;
+}
+
+.container article {
+    width: 288px;
+    gap: 288px;
 }

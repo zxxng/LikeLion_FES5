@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button-make</title>
+<style>
+    button {
+        font-size: 12px;
+        width: 88px;
+        height: 32px;
+    }
+    button.btn {
+        color: white;
+        background: #3A4556;
+        border: 1px solid #1A202C;
+    }
+    button.yes {
+        color: #439AFF;
+        background: #1A202C;
+        
+    }
+    button.del {
+        color: #EB5757;
+        background: #1A202C;
+    }
+
+    button:hover {
+        text-decoration: underline;
+    }
+
+    button:active{
+        text-decoration: underline;
+    }
+
+    button.black:disabled {
+        color: #4A5568;
+    }
+
+
+</style>
+</head>
+<body>
+    <button class="btn" type="button">Button</button>
+    <button class="btn" type="button">Button</button>
+    <button class="btn" type="button">Button</button>
+
+    <button class="black" type="button" disabled>Button</button>
+
+    <button class="yes" type="button">Yes</button>
+
+    <button class="del" type="button">Del</button>
+
+</html>

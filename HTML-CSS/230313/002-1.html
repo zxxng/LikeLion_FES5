@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button 동적 가상선택자</title>
+<style>
+    [class^="btn"] {
+        width: 88px;
+        height: 32px;
+        background: #343F50;
+        /* Dark/BG/1_#1A202C */
+        border: 1px solid #1A202C;
+        box-shadow: inset 1px 1px #4A5568 ;
+        color: #cbd5df;
+    }
+
+    [class^="btn"]:not(:disabled):hover {
+        text-decoration: underline;
+        color: #fff;
+    }
+    
+    .btn:active {
+        box-shadow: inset 1px 1px #262F3E;
+    }
+
+    .btn:focus {
+        outline: none;
+        border: 1px solid #439AFF;
+    }
+
+    .btn:disabled {
+        box-shadow: none;
+        color: #4A5568;
+        background: #3A4556;
+        /* Dark/BG/3_4_#3A4556 */
+        border: 1px solid #3A4556;
+    }
+
+    .btn-positive {
+        color: #439AFF;
+    }
+
+    .btn-positive:hover,
+    .btn-positive:active {
+        background-color: #439AFF;
+        border: 1px solid #439AFF;
+    }
+
+    .btn-positive:hover {
+        box-shadow: inset 1px 1px #73B4FF;
+    }
+
+    .btn-positive:active {
+        box-shadow: inset 1px 1px  #3B78BE;
+    } 
+
+    .btn-negative {
+        color: #EB5757;
+    }
+
+    .btn-negative:hover,
+    .btn-negative:active {
+        background-color: #EB5757;
+        border: 1px solid #FD6F6F;
+    }
+
+    .btn-negative:hover {
+        box-shadow: inset 1px 1px #FD6F6F;
+    }
+
+    .btn-negative:active {
+        box-shadow: inset 1px 1px  #D94242;
+    }
+</style>
+</head>
+<body>
+    <button class="btn" type="button">button</button>
+    <button class="btn-positive" type="button">Yes</button>
+    <button class="btn-negative" type="button">Del</button>
+    <button class="btn" type="button" disabled>button</button>
+</body>
+</html>

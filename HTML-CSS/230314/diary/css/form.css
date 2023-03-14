@@ -1,0 +1,59 @@
+body {
+    background: #fffaf0;
+}
+
+.login label,
+.login input,
+.login button {
+    display: block;
+    width: 100%;
+    /* reset css 를 넣지 않았을 경우 넘치지 않기 위해 */
+    box-sizing: border-box;
+}
+
+.login input {
+    /* border-width: 0 0 1px 0;
+    border-color: #677880; */
+    border: none;
+    box-shadow: 0 1px 0 0 #677880;
+    height: 48px;
+    margin-bottom: 24px;
+    /* transition: border 0.2s; */
+    transition: box-shadow 0.5s;
+    border-radius: 4px 4px 0 0 ;
+}
+
+.login input:hover {
+    /* border-color: #2e6ff2;
+    border-bottom-width: 2px; */
+    box-shadow: 0 2px 0 0 #2e6ff2;
+}
+
+.login input:focus {
+    outline: none;
+    /* border: 2px solid #2e6ff2; */
+    box-shadow: 0 0 0 2px #2e6ff2;
+    border-radius: 4px;
+}
+
+.login label {
+    font-size: 14px;
+    color: #29363D;
+    margin-bottom: 8px;
+}
+
+.login button {
+    background: #29363D;
+    color: #F4F5F5;
+    height: 48px;
+    border: 0;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.login button:disabled {
+    background-attachment: #9fa9ae;
+}
+
+

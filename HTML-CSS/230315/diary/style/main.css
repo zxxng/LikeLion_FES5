@@ -1,0 +1,138 @@
+.heart {
+    font-size: 16px;
+    background: url(../img/heart.svg) no-repeat 0 center / 1.4em;
+    padding-left: 1.4em;
+}
+
+.diary-textarea {
+    /* 인라인요소 하단 공백 제거 */
+    /* vertical-align: top; */
+    display: block;
+    width: 100%;
+    height: 360px;
+    resize: none;
+    padding: 16px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.diary-main textarea {
+    margin: 16px 0;
+}
+
+/* article */
+
+/* ul, li 초기 reset */
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+p, h3 {
+    margin: 0;
+}
+
+.diary-article {
+    border-color: #677880;
+    border-style: solid;
+    border-width: 4px 1px 1px 1px;
+    padding: 64px 48px;
+    /* margin: 20px; */
+    position: relative;
+}
+
+.diary-article::before,
+.diary-article::after {
+    /* 내용을 넣을때 content 입력 */
+    content: "";
+    display: block;
+    width: 80px;
+    height: 40px;
+    position: absolute;
+}
+
+.diary-article::before {
+    top: -20px;
+    left: 30px;
+    background: #fffaf0 url(../img/quote-start.svg) no-repeat 0 0 / contain;
+}
+
+.diary-article::after {
+    bottom: -20px;
+    right: 30px;
+    /* no repeat으로 반복 막기 */
+    background: #fffaf0 url(../img/quote-end.svg) no-repeat 0 0 / contain;
+}
+
+.article-title {
+    color: #29363d;
+    font-size: 16px;
+    float: left;
+
+}
+.article-title::before {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    border-top: 1px solid #677880;
+    top: 4px;
+    left: 0;
+    z-index: -1;
+}
+
+.article-time {
+    color: #677880;
+    font-size: 12px;
+    float: right;
+}
+
+.article-content {
+    color: #5a6a72;
+    font-size: 14px;
+    line-height: 1.4;
+    clear: both;
+    margin-top: 40px;
+}
+
+.container {
+    display: flex;
+    width: 1224px;
+    max-width: calc(100% - 60px);
+    margin: auto;
+    gap:  40px;
+}
+
+
+.container main {
+    flex-basis: 456px;
+    flex-shrink: 0;
+    border-right: 1px solid #ff4f6e;
+    padding-top: 56px;
+    padding-right: 40px;
+    min-height: calc(100vh - 120px);
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        gap: 0;
+    }
+    .container main {
+        border-right: 0;
+        padding-right: 0;
+        min-height: auto;
+    }
+}
+
+.container section {
+    padding-top: 94px;
+}
+
+.container section ul li {
+    margin-bottom: 76px;
+}

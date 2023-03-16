@@ -1,0 +1,194 @@
+/* layout */
+.container {
+  display: flex;
+}
+
+.container .section-text {
+  flex-grow: 1;
+}
+
+@media (min-width: 1200px) {
+  .container .container2 {
+    flex-basis: 486px;
+    /* flex 줄어들지 않게 */
+    flex-shrink: 0;
+  }
+  
+}
+@media (max-width: 1199px) {
+  .container {
+    flex-direction: column;
+    /* 변동값 60 40 */
+    gap: 60px;
+  }
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  /* 변동값 20 20 14 */
+  gap: 20px;
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .container2 {
+    flex-direction: row;
+  }
+  .container2 .link1,
+  .container2 .link2 {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+}
+@media (max-width: 768px) {
+  .container2 {
+    /* 변동값 20 20 14 */
+    gap: 14px;
+  }
+}
+
+
+/* style */
+.container {
+  width: 1200px;
+  max-width: calc(100% - 60px);
+  min-width: 400px;
+}
+
+.section-text h1 {
+  color: #121314;
+  font-weight: normal;
+
+  /* 변동값 70 70 36 */
+  font-size: 70px;
+}
+
+.section-text p {
+  color: #47494d;
+
+  /* 변동값 20 18 14 */
+  font-size: 20px;
+
+  /* 변동값 20 20 14 */
+  margin-top: 20px;
+}
+
+.link1,
+.link2 {
+  border-radius: 20px;
+  color: white;
+  aspect-ratio: 485 / 280;
+
+  /* 변동값
+    40px 30px 30px 40px
+    30px 20px 20px 30px
+    30px 20px 20px 30px
+   */
+  padding: 40px 30px 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.link1 {
+  background: url(./img/background1.jpg) no-repeat 0 0 / cover;
+}
+
+.link2 {
+  background: url(./img/background2.jpg) no-repeat 0 0 / cover;
+}
+
+.link1 strong,
+.link2 strong {
+  /* 변동값 30 24 20 */
+  font-size: 30px;
+}
+
+.link1 span,
+.link2 span {
+  align-self: flex-end;
+}
+
+.go-after::after {
+  content: "";
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  /* background: royalblue; */
+  border: 1px solid #fff;
+  border-width: 2px 2px 0 0;
+  transform: rotate(45deg);
+  margin-left: 0.2em;
+  border-radius: 0.1em
+}
+
+.go-bg {
+  padding-right: 1.2em;
+  background: url(./img/arrow.svg) no-repeat 100% center;
+}
+
+@media (max-width:1200px) {
+.section-text p {
+  /* 변동값 20 18 14 */
+  font-size: 18px;
+}
+.link1,
+.link2 {
+  /* 변동값
+    40px 30px 30px 40px
+    30px 20px 20px 30px
+    30px 20px 20px 30px
+   */
+  padding: 30px 20px 20px 30px;
+}
+
+.link1 strong,
+.link2 strong {
+  /* 변동값 30 24 20 */
+  font-size: 24px;
+}
+}
+
+@media (max-width: 768px){
+  .section-text h1 {
+    /* 변동값 70 70 36 */
+    font-size: 36px;
+  }
+  .section-text p {
+    /* 변동값 20 18 14 */
+    font-size: 14px;
+  
+    /* 변동값 20 20 14 */
+    margin-top: 14px;
+  }
+  .link1,
+  .link2 {
+  /* 변동값
+    40px 30px 30px 40px
+    30px 20px 20px 30px
+    30px 20px 20px 30px
+   */
+  padding: 30px 20px 20px 30px;
+  }
+  .link1 strong,
+  .link2 strong {
+    /* 변동값 30 24 20 */
+    font-size: 20px;
+  }
+}
+
+@media (min-height: 820px) {
+  body {
+    display: flex;
+    /* height 값이 있어야 세로 중앙 정렬이 가능하다 */
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-height: 819px) {
+  .container {
+    margin: 40px auto;
+  }
+}

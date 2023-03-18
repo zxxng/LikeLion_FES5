@@ -12,8 +12,8 @@
 	<header>img</header>
 	<div class="wrap">
 		<section class="page">
-			<article class="page-main">
-				<ul class="coke-list">
+			<article class="page-1">
+				<ul class="coke-select">
 					<li>1</li>
 					<li>2</li>
 					<li>3</li>
@@ -21,24 +21,28 @@
 					<li>5</li>
 					<li>6</li>
 				</ul>
-				<div>
-					<p>잔액</p>
-					<button>거스름돈 반환</button>
-				</div>
-				<div>
-					<p>입금액 입력</p>
-					<button>입금</button>
-				</div>
-				<div>coke-scroll</div>
+				<div class="line balance">잔액</div>
+				<button class="btn-s">거스름돈 반환</button>
+				<input class="line" placeholder="입금액 입력">
+				<button class="btn-s">입금</button>
+				<div class=" line coke-box">0</div>
+				<button class="btn-l">획득</button>
 			</article>
-			<article class="page-sub">
-				<div>money</div>
-				<ul class="coke-list-row">
-					<li>1</li>
-					<li>2</li>
-					<li>3</li>
-					<li>4</li>
-				</ul>
+
+			<article class="page-2">
+				<div class="box-1">
+					<div class="money"></div>
+				</div>
+				<div class="box-2">
+					<p>획득한 음료</p>
+					<ul class="coke-list">
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+					</ul>
+					<p>총금액 : 9,000원</p>
+				</div>
 			</article>
 		</section>
 	</div>

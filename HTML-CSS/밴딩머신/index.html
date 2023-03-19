@@ -5,41 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>밴딩머신</title>
-    <link rel="stylesheet" href="./style/common.css">
-    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-	<header>img</header>
+	<header>
+		<h1 class="a11y-hidden">Coka Cola</h1>
+		<img class="logo" src="./img/logo.png" alt="logo">
+	</header>
 	<div class="wrap">
+		<h2 class="a11y-hidden">coke select</h2>
 		<section class="page">
 			<article class="page-1">
 				<ul class="coke-select">
-					<li>1</li>
-					<li>2</li>
-					<li>3</li>
-					<li>4</li>
-					<li>5</li>
-					<li>6</li>
+					<li>
+						<button>
+							<img src="./img/can-red.png" alt="can-red">
+							<span class="name">Original_Cola</span>
+							<span class="cost">1000원</span>
+						</button>
+					</li>
+					<li>
+						<button>
+							<img src="./img/can-violet.png" alt="can-violet">
+							<span class="name">Violet_Cola</span>
+							<span class="cost">1000원</span>
+						</button>
+					</li>
+					<li>
+						<button>
+							<img src="./img/can-yellow.png" alt="can-yellow">
+							<span class="name">Yellow_Cola</span>
+							<span class="cost">1000원</span>
+						</button>
+					</li>
+					<li>
+						<button>
+							<img src="./img/can-blue.png" alt="can-blue">
+							<span class="name">Cool_Cola</span>
+							<span class="cost">1000원</span>
+						</button>
+					</li>
+					<li>
+						<button>
+							<img src="./img/can-green.png" alt="can-green">
+							<span class="name">Green_Cola</span>
+							<span class="cost">1000원</span>
+						</button>
+					</li>
+					<li>						<button>
+						<img src="./img/can-orange.png" alt="can-red">
+						<span class="name">Orange_Cola</span>
+						<span class="cost">1000원</span>
+					</button></li>
 				</ul>
-				<div class="line balance">잔액</div>
+				<div class="line balance">
+					<span>잔액 : </span>
+					<span>1,000원</span>
+				</div>
 				<button class="btn-s">거스름돈 반환</button>
 				<input class="line" placeholder="입금액 입력">
 				<button class="btn-s">입금</button>
-				<div class=" line coke-box">0</div>
+				<ul class="line coke-box">
+					<li>
+						<img src="./img/can-red.png" alt="can-red">
+						<span class="name">Original_Cola</span>
+						<span class="quantity">1</span>
+					</li>
+					<li>
+						<img src="./img/can-green.png" alt="can-green">
+						<span class="name">Green_Cola</span>
+						<span class="quantity">2</span>
+					</li>
+					<li>
+						<img src="./img/can-orange.png" alt="can-orange">
+						<span class="name">Orange_Cola</span>
+						<span class="quantity">1</span>
+					</li>
+					<li>
+						<img src="./img/can-Violet.png" alt="can-violet">
+						<span class="name">Violet_Cola</span>
+						<span class="quantity">5</span>
+					</li>
+				</ul>
 				<button class="btn-l">획득</button>
 			</article>
 
 			<article class="page-2">
 				<div class="box-1">
-					<div class="money"></div>
+					<div class="money">
+						<span>소지금 : </span>
+						<span>25,000원</span>
+					</div>
 				</div>
 				<div class="box-2">
 					<p>획득한 음료</p>
 					<ul class="coke-list">
-						<li>1</li>
-						<li>2</li>
-						<li>3</li>
-						<li>4</li>
+						<li>
+							<img src="./img/can-red.png" alt="can-red">
+							<span class="name">Original_Cola</span>
+							<span class="quantity">1</span>
+						</li>
+						<li>
+							<img src="./img/can-green.png" alt="can-green">
+							<span class="name">Green_Cola</span>
+							<span class="quantity">2</span>
+						</li>
+						<li>
+							<img src="./img/can-orange.png" alt="can-orange">
+							<span class="name">Orange_Cola</span>
+							<span class="quantity">1</span>
+						</li>
+						<li>
+							<img src="./img/can-Violet.png" alt="can-violet">
+							<span class="name">Violet_Cola</span>
+							<span class="quantity">5</span>
+						</li>
 					</ul>
 					<p>총금액 : 9,000원</p>
 				</div>

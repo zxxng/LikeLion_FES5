@@ -83,6 +83,7 @@ html {
 	border-radius: 10px;
 	text-align: center;
 	padding: 9px;
+	position: relative;
 }
 
 .coke-select button img {
@@ -110,6 +111,16 @@ html {
 .coke-select li:nth-child(1),
 .coke-select li:nth-child(5){
 	border: 3px solid #6327FE;
+}
+
+.coke-select .sold-out {
+	background: rgba(0,0,0,0.8);
+	width: 94px;
+	height: 130px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 10px;
 }
 
 .line {

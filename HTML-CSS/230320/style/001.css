@@ -1,0 +1,53 @@
+/* reset */
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    all: unset;
+}
+
+/* layout */
+.wrap {
+    box-sizing: border-box;
+    width: 1060px;
+    margin: auto;
+    background: #F2F2F2;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* style */
+h1 {
+    font-size: 24px;
+    margin-top: 41px;
+}
+
+.line {
+    width: 650px;
+    border: 2px solid #BDBDBD;
+    margin: auto;
+    margin-top: 31px;
+}
+
+.title-btn button {
+    font-size: 16px;
+    color: #828282;
+}
+
+.title-btn button:active {
+    color: black;
+}
+
+.title-btn ul {
+    display: flex;
+}
+.title-btn li {
+    display: inline-block;
+    margin: 28px 60px;
+}

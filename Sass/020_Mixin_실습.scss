@@ -1,0 +1,52 @@
+// 문제
+// .card {
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// }
+
+// .card-item {
+// 	width: 100px;
+// 	height: 100px;
+// 	border-radius: 10%;
+// }
+
+// .product {
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: right;
+// }
+
+// .product-item {
+// 	width: 200px;
+// 	height: 200px;
+// 	border-radius: 20%;
+// }
+
+@mixin flex-option($col, $row) {
+	display: flex;
+	justify-content: $col;
+	align-items: $row;
+}
+
+@mixin box($width, $height, $radius) {
+	width: $width;
+	height: $height;
+	border-radius: $radius;
+}
+
+.card {
+	@include flex-option(center, center);
+}
+
+.card-item {
+	@include box(100px, 100px, 10%);
+}
+
+.product {
+	@include flex-option(right, right);
+}
+
+.product-item {
+	@include box(200px, 200px, 20%);
+}

@@ -1,0 +1,55 @@
+/* 초기화 - Resets */
+h1, p {
+    margin: initial;
+}
+img {
+    vertical-align: top;
+}
+
+/* 가운데정렬만 한다 - Layout */
+.l-wrapper {
+    /* box-shadow: inset 0 0 10px red; */
+    width: 300px;
+    margin: 100px auto;
+}
+
+/* Components */
+body {
+    background-image: url(./images/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* .card {
+
+} */
+
+.card-cover {
+    /* box-shadow: inset 0 0 10px blue; */
+    margin: 0 auto;
+    display: block;
+}
+
+.card-contents {
+    /* box-shadow: inset 0 0 10px purple; */
+    /* background-attachment: brown; */
+    color: white;
+    /* background-image: url(./images/green.png);
+    background-repeat: no-repeat; */
+    background: #93572e url(./images/green.png) repeat-x;
+    padding: 64px 20px 20px 20px;
+    border-radius: 10px 10px 30px 30px;
+    border-bottom: 10px solid #4a260b;
+    box-shadow: inset 0 -2px 20px rgb(0,0,0, 0.6);
+}
+
+.card-contents h1{
+    margin-bottom: 10px;
+}
+
+.card-contents p {
+    color: antiquewhite;
+    margin-bottom: 1.4em;
+    /* margin: 1.2em 0; */
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title></title>
+		<style></style>
+</head>
+<body>
+	<script>
+		// 드모르간 법칙
+		// 무조건 true가 되는 곳이나 무조건  false가 되는 구간을 발견할 수 있다.
+		// 또는 조건을 단순화 할 수 있다.
+		const x = 0
+		const y = 1
+		console.log(!(x || y) === (!x && !y))
+		console.log(!(x && y) === (!x || !y))
+	</script>
+</body>
+</html>

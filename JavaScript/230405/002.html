@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<style></style>
+</head>
+<body>
+	<script>
+		// 1. 나이가 18세 이상이면 "안녕하세요!"를
+		// 2. 10세 이상이면 "안녕! 반가워 꼬마친구! ” 를 
+		// 3. 10세 미만이면 “부럽다…” 를 출력합니다.
+
+		let age = parseInt(prompt("나이를 말씀해주세요!"));
+
+		if (age >= 18) console.log('안녕하세요!')
+		else if (age >= 10) console.log('안녕! 반가워 꼬마친구!')
+		else console.log('부럽다...')
+
+		// 1. 성적이 90점 이상이면 "A", 
+		// 2. 80점 이상이면 "B", 
+		// 3. 70점 이상이면 
+		// 4. "C", 60점 이상이면 "D", 
+		// 5. 그 외에는 “강해져서 돌아와라”를 출력합니다.
+
+		let score = parseInt(prompt("성적을 입력하세요."));
+		if (score > 100) alert('값이 너무 커요')
+		else if (score >= 90) console.log("A");
+		else if (score >= 80) console.log("B");
+		else if (score >= 70) console.log("C");
+		else if (score >= 60) console.log("D");
+		else console.log("강해져서 돌아와라.");
+
+		score>=90 ? console.log("A") : score>=80 ? console.log("B") : score>=70 ? console.log("C") : score>=60 ? console.log("D") : console.log("강해져서 돌아와라.");
+	</script>
+</body>
+</html>

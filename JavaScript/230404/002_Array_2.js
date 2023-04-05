@@ -21,7 +21,7 @@ Array.from('hello world').filter((v)=>!['a','e','i','o','u'].includes(v))
 
 // reduce(function, initialValue)
 const arr3 = [1, 2, 3, 4, 5]
-arr3. reduce((a, c) => a + c, 0)
+arr3.reduce((a, c) => a + c, 0)
 
 const arr4 = []
 arr4.reduce((a, c) => a + c)
@@ -47,10 +47,13 @@ arr9.includes('yeong')
 
 // join
 const arr10 = ['hello', 'world', 'jaeyyoo']
-arr10.join('!')
+arr10.join('')
 
-const arr11 = ['010', '5044', '2903']
-arr11.join('-')
+const arr11 = ['hello', 'world', 'jaeyyoo']
+arr11.join('!')
+
+const arr12 = ['010', '5044', '2903']
+arr12.join('-')
 
 // const arr12 = [010, 5044, 2903]
 // arr11.join('-') // '8-5044-2903' 잘못된 반환값. 

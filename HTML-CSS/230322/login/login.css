@@ -125,8 +125,8 @@ body {
     height: 22px;
     margin-right: 8px;
     vertical-align: -5px;
-    background-image: url("images_login/icon_check_empty.png");
-
+    /* background-image: url("images_login/icon_check_empty.png"); */
+    background: url('images_login/css_sprites.png') -11px -81px;
 }
 
 .form-login .inp-hold:focus-visible+.labl-hold::before {
@@ -135,7 +135,8 @@ body {
 }
 
 .form-login .inp-hold:checked+.labl-hold::before {
-    background-image: url("images_login/icon_check.png");
+    /* background-image: url("images_login/icon_check.png"); */
+    background: url('images_login/css_sprites.png') -55px -81px;
 
 }
 
@@ -200,4 +201,9 @@ body {
     right: 0;
     z-index: 30;
     background-color: transparent;
+}
+
+.cont-form-login .btn-close img {
+    width: 18px;
+    height: 18px;
 }

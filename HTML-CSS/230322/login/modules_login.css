@@ -14,8 +14,8 @@
 }
 
 .btn-close {
-    width: 16px;
-    height: 16px;
+    /* width: 16px;
+    height: 16px; */
     background-color: #fff;
     border: none;
     cursor: pointer;
@@ -73,6 +73,8 @@
     content: "";
     width: 22px;
     height: 22px;
+    background-image: url("images_login/css_sprites_x2.png");
+    background-size: 123px 89px;
 }
 
 .link-sns-login.icon-facebook {
@@ -88,18 +90,21 @@
 }
 
 .icon-google::before {
-    background: url("images_login/icon_google.png") no-repeat;
+    background-position: -10px -10px ;
 }
 
 .icon-naver::before {
-    background: url("images_login/icon_naver.png") no-repeat;
+    /* background: url("images_login/icon_naver.png") no-repeat; */
+    background-position: -58px -10px ;
 }
 
 .icon-kakao::before {
-    background: url("images_login/icon_kakao.png") no-repeat;
+    /* background: url("images_login/icon_kakao.png") no-repeat; */
+    background-position: -10px -58px ;
 }
 
 .icon-facebook::before {
     height: 24px;
-    background: url("images_login/icon_facebook.png") center no-repeat;
+    /* background: url("images_login/icon_facebook.png") center no-repeat; */
+    background-position: -100px -10px ;
 }

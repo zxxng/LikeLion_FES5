@@ -1,56 +1,188 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Make Select Box</title>
-<style>
-/* reset */
-body, h2, ul, li {
-    margin: 0;
-    padding: 0;
-}
+    <title>Document</title>
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-h2 {
-margin: 30px;
-}
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
 
-.btn-select {
-width: 200px;
-height: 30px;
-background: purple;
-color: #fff;
-}
+        /* HTML5 display-role reset for older browsers */
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
 
-.list-member {
-display: none;
-width: 200px;
-height: 30px;
-}
+        body {
+            line-height: 1;
+        }
 
-.list-member.on {
-display: block;
-}
+        ol,
+        ul {
+            list-style: none;
+        }
 
-.list-member li {
-height: 30px;
-width: 200px;
-}
+        blockquote,
+        q {
+            quotes: none;
+        }
 
-.list-member li button {
-display: block;
-height: 100%;
-width: 100%;
-background-color: #fff;
-border: 1px solid black;
-border-top: none;
-}
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
 
-.list-member li button:hover {
-background-color: bisque;
-}
-</style>
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        /* 직접 셀렉트 박스 만들기 */
+        h2 {
+            margin: 30px;
+        }
+
+        .btn-select {
+            width: 200px;
+            height: 30px;
+            background: purple;
+            color: #fff;
+        }
+
+        .list-member {
+            display: none;
+            width: 200px;
+            height: 30px;
+        }
+
+        .list-member.on {
+            display: block;
+        }
+
+        .list-member li {
+            height: 30px;
+            width: 200px;
+        }
+
+        .list-member li button {
+            display: block;
+            height: 100%;
+            width: 100%;
+            background-color: #fff;
+            border: 1px solid black;
+            border-top: none;
+        }
+
+        .list-member li button:hover {
+            background-color: bisque;
+        }
+    </style>
 </head>
 
 <body>
@@ -77,4 +209,5 @@ background-color: bisque;
         });
     </script>
 </body>
+
 </html>

@@ -28,10 +28,10 @@ arr['u_jaeng'] = 100
 arr.jaeyyoo = 10000
 
 // 배열의 특징
-// let arr = [];
-// let arr = [1, 2, 3];
-// let arr2 = new Array(4, 5, 6);
-// let arr2 = new Array(3);
+// let arr1 = [];
+// let arr2 = [1, 2, 3];
+// let arr3 = new Array(4, 5, 6);
+// let arr4 = new Array(3);
 // Array(100).fill(0); 
 
 // 1. 배열은 순서가 있습니다. 배열의 순서를 index, 이 순서로 호출하는 것을 indexing이라고 합니다. 배열 안에 값을 원소(elements)라고 합니다.
@@ -119,7 +119,11 @@ arr13.splice(2)
 // 2번째 인덱스 이후부터 모두 삭제
 
 // arr.slice(start, end)
-const myArray = []
+const myArray = ["apple", "banana", "cherry", "durian", "elderberry"]
+console.log(myArray.slice(1, 4))
+console.log(myArray)
+myArray.slice(1)
+myArray.slice(0, 100)
 
 //////////////////////
 

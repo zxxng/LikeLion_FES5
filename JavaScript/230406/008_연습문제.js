@@ -34,8 +34,7 @@ for (let i in num) {
 
 // 4
 // 반복문만 사용하여 숫자단위 콤마 찍기
-let num2 = 1000000
-num2 = String(num2)
+let num2 = toString(prompt("입력"))
 let print = ''
 for (let i=0; i<num2.length; i++){
 	print += num2[i]
@@ -48,7 +47,8 @@ for (let i=0; i<num2.length; i++){
 // 반복문만 사용하여 숫자단위 콤마 없애기
 
 
-// 문자열 뒤깁기
+
+// 문자열 뒤집기
 let str2 = 'hello jaeyyoo'
 let res2 =''
 let i=str2.length;

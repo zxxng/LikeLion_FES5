@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>로또 번호 추첨기</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>로또 번호 추첨기</h1>
+	<script>
+		let lotto = [];
+		while (lotto.length < 6) {
+			// 1 ~ 45 랜덤 생성
+			let num = parseInt(Math.random() * 45 + 1);
+			// 중복된 번호가 없을 경우 추가
+			if (lotto.indexOf(num) == -1) {
+				lotto.push(num);
+			}
+		}
+		
+		// 오름차순 정렬
+		lotto.sort((a,b)=>a-b);
+		document.write("<div class='ball ball1'>" + lotto[0] + "</div>");
+		document.write("<div class='ball ball2'>" + lotto[1] + "</div>");
+		document.write("<div class='ball ball3'>" + lotto[2] + "</div>");
+		document.write("<div class='ball ball4'>" + lotto[3] + "</div>");
+		document.write("<div class='ball ball5'>" + lotto[4] + "</div>");
+		document.write("<div class='ball ball6'>" + lotto[5] + "</div>");
+	</script>
+</body>
+</html>

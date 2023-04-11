@@ -2,7 +2,7 @@
 // let q1 = [10, 20, 30, 10, 20, 30, 40, 10]
 let sum1 = 0
 for (let i=0; i<q1.length; i++){
-    sum1 += q1[i]
+  sum1 += q1[i]
 }
 console.log(sum1 / q1.length)
 
@@ -34,15 +34,6 @@ for (let i in num) {
 
 // 4
 // 반복문만 사용하여 숫자단위 콤마 찍기
-let num2 = toString(prompt("입력"))
-let print = ''
-for (let i=0; i<num2.length; i++){
-	print += num2[i]
-	if (i % 3 === 0 && !(i === num2.length-1)) {
-		print += ','
-	}
-}
-
 
 // 반복문만 사용하여 숫자단위 콤마 없애기
 

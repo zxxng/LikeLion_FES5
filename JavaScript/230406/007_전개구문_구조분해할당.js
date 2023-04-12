@@ -96,3 +96,19 @@ const test4 = [
 for (const [i, j, ...k] of test4) {
   console.log(i, j, k);
 }
+
+// 4/12(수) 추가
+Math.max(...[10, 20, 30])
+Math.min(...[10, 20, 30])
+Math.max(...[10, 20, 30, [11, 12, 13, [29, 40, 50]]].flat(Infinity))
+
+// 오류나는코드
+Math.max([10, 20, 30])
+Math.min([10, 20, 30])
+Math.max([10, 20, 30, [11, 12, 13, [29, 40, 50]]].flat(Infinity))
+
+// 자주사용되는 코드
+const s1 ='hello world'
+console.log([s1]) // s.split()
+console.log([...s1]) // s.split('')
+// {...s} 이렇게 전개할 이유는 없습니다.

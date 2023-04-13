@@ -48,17 +48,6 @@ let data3 = new Map({'one':1, 'two':2}) // X
 // let data = new Map('hello world') // X
 // let data = new Map([10, 20, 30, 40]) // X
 
-// 직접 순회가 가능한 Map!
-let data4 = {'one':1, 'two':2}
-for (const i of data) { // X 작동되지 않습니다!
-    console.log(i)
-}
-
-let data5 = {'one':1, 'two':2}
-for (const i of Object.entries(data)) {
-    console.log(i)
-}
-
 // 직접 순회가 가능하지 않은 Object!
 let data6 = {'one':1, 'two':2}
 for (const i of data) { // X 작동되지 않습니다!
@@ -103,4 +92,3 @@ let map = new Map(); // 키 값의 중복이 안됩니다.
 map.set('이호준', 1)
 map.set('이호준', 2)
 map.set('이호준', 3)
-

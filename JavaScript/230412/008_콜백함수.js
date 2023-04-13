@@ -13,7 +13,7 @@ let arr1 = [10, 20, 11, 21, 19, 17]
 arr1.map((v, i)=> v * 2)
 
 let arr2 = [10, 20, 11, 21, 19, 17]
-function 두배(v, i){
+function map_x2(v, i){
 	return v * 2
 }
-arr2.map(두배)
+arr2.map(map_x2)

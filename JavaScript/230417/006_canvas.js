@@ -314,5 +314,3 @@
 
 	simulationBtn_50.addEventListener("click", chk_btn_click);
 })();
-message.txt
-11KB

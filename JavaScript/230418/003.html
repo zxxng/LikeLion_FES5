@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<style></style>
+</head>
+<body>
+<!-- submit 의 기본 동작을 중지 -->
+<!-- <form action="">
+    <button type="submit" class="submit">제출</button>
+</form>
+<script>
+    document.addEventListener('contextmenu', (event) => {
+        console.log('오른쪽 클릭!');
+        event.preventDefault();
+    })
+</script> -->
+<form action="">
+	<button type="submit" class="submit">제출</button>
+</form>
+
+<script>
+	const submit = document.querySelector('.submit');
+	submit.addEventListener('click', (event) => {
+		console.log('clicked');
+		event.preventDefault();
+		event.stopPropagation();
+	});
+	
+	document.body.addEventListener('click', () => {
+		console.log('event still alive!');
+	}, true);
+</script>
+</body>
+</html>

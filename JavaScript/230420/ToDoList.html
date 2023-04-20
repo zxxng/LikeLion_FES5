@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ToDoList</title>
+</head>
+<body>
+	<script>
+		class Todo {
+			constructor(todoList) {
+				this.todoList = todoList;
+				this.state = false;
+			}
+			changeState() {
+				this.state = true;
+			}
+		}
+		class TodoManager {
+			constructor(todoList){
+				this.todoList = todoList;
+			}
+			addItem(item) {
+				this.todoList += {todsoList : this.item, state : false};
+			}
+			getItems() {
+				console.log(`할 일 목록\n${this.todoList}`)
+			}
+			getLeftTodoCount() {
+				// this.leftList = this.todoList.filter(this.todoList => this.todoList.state === false)
+				console.log(`남은 할 일의 개수는 ${this.leftList.length}개 입니다.`)
+			}
+		}
+
+		// 재현강사님 풀이
+		class Todo1 {
+			constructor(item, finished) {
+				this.item = item;
+				this.finished = finished;
+			}
+			changeState() {
+				!this.finished;
+			}
+		}
+		class TodoManager1 {
+			constructor() {
+				this.todoList = [];
+			}
+			addItem(item, finished = false) {
+				const todo = new Todo1(item, finished);
+				this.todoList.push(todo);
+			}
+			getItems() {
+				return this.todoList;
+			}
+			getLeftTodoCount() {
+				// this.todoList.reduce((total, current)=>{
+				// 	if (current.finished === false){
+				// 		return ++total;
+				// 	} else {
+				// 		return total;
+				// 	}
+				// }, 0)
+
+				// return this.todoList.reduce((total, current) => current.finishied === false ? ++total : total, 0);
+
+				return this.todoList.filter((item) => item.finishied === false).length;
+			}
+		}
+	</script>
+</body>
+</html>

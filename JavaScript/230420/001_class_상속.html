@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<style></style>
+</head>
+<body>
+	<script>
+	class Sausage {
+		constructor(ingre1, ingre2) {
+			this.ingre1 = ingre1;
+			this.ingre2 = ingre2;
+		}
+		taste() {
+			console.log(`${this.ingre1}와 ${this.ingre2} 맛이 난다!`)
+		}
+	}
+	class FiresSausage extends Sausage {
+		taste() {
+			console.log(`${this.ingre1}와 ${this.ingre2}, 불맛이 나기 시작합니다.🔥`)
+		}
+	}
+
+	// 범관님 풀이 - 전개구문 사용해서 인자 여러개 받기
+	class sausage1 {
+    constructor(...taste){
+        this.taste = taste
+    }
+    whatTaste() {
+        console.log(`${this.taste} 맛이 난다!`)
+    }
+	}
+
+	class firesSausage1 extends sausage1{
+			whatTaste() {
+					console.log(`${this.taste}맛과 불맛이 난다!`)
+			}
+	}
+
+	let a = new sausag1('파', '소고기', '겨자')
+	let b = new firesSausage1('과자', '피')
+
+	// 재현강사님 풀이
+	
+	</script>
+</body>
+</html>

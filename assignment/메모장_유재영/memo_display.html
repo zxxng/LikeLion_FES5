@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link
+		rel="stylesheet"
+		href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css"
+	/>
+	<script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+	<style>
+		main {
+			display: flex;
+			flex-direction: column;
+			/* justify-content: center; */
+			align-items: center;
+		}
+
+		input {
+			display: block;
+			width: 300px;
+			height: 30px;
+			margin-bottom: 10px;
+		}
+
+		textarea {
+			display: block;
+			width: 300px;
+			height: 300px;
+			margin-bottom: 10px;
+		}
+
+		button {
+			margin-top: 10px;
+			display: block;
+			width: 306px;
+			height: 30px;
+		}
+
+		#editor {
+			width: 800px;
+		}
+
+		#display {
+			width: 800px;
+		}
+
+		button {
+			display: inline-block;
+			width: 200px;
+			margin-right: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<section class="memo-wrap">
+			<input type="text" name="" id="title" />
+			<div id="editor"></div>
+			<!-- <textarea name="" id="content" cols="30" rows="10"></textarea> -->
+			<button onclick="saveNote()">저장</button>
+		</section>
+		<section id="display" class="memo-wrap"></section>
+	</main>
+
+	<script src="memo_storage.js"></script>
+</body>
+</html>

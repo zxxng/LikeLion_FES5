@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+	'use strict';
+
+	'use strict';
+
+  class UserStorage {
+
+   // 유저가 등록되었는지 확인
+  searchUser(userName, password, onSuccess, onError) {
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'users.json');
+    xhr.onreadystatechange = () => {
+			if (xhr.readyState === 4 && xhr.status === 200) {
+				const result = JSON.parse(xhr.responseText).user.find((item) => {
+				return item.userName === userName && item.password === password
+				});
+				if (result) {
+				onSuccess();
+				} else {
+
+				}
+			}
+		}
+    xhr.send();
+  }
+
+   // 등록된 유저에 따른 인사말을 출력
+	sayHi() {
+
+	}
+  }
+
+  const userStorage = new UserStorage();
+  userStorage.searchUser('hello', 'lions');
+
+	</script>
+</body>
+
+</html>

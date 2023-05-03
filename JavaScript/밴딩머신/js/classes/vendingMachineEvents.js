@@ -20,6 +20,8 @@ class VendingMachineEvents {
 	//장바구니 콜라 생성 함수
 	stagedItemGenerator(target) {
 		const stagedItem = document.createElement('li');
+		stagedItem.dataset.item = target.dataset.item;
+		stagedItem.dataset.price = target.dataset.price;
 
 		stagedItem.innerHTML = `
 		<img src="./img/${target.dataset.img}" alt="">
@@ -94,22 +96,53 @@ class VendingMachineEvents {
 			item.addEventListener('click', (event) => {
 				const balanceVal = parseInt(this.balance.textContent.replaceAll(',', ''));
 				const targetElPrice = parseInt(event.currentTarget.dataset.price);
+				const stagedListitem = this.stagedList.querySelectorAll('li');
 
 				if (balanceVal >= targetElPrice) {
 					this.balance.textContent = new Intl.NumberFormat().format(balanceVal - targetElPrice) + '원';
+					
+					// 장바구니에 아이템이 있는지 없는지 확인하기 위해 반복문 활용
+					for (const item of this.stagedListitem === item) {
+						// 클릭한 콜라의 이름과 장바구니에 있던 콜라의 이름이 같은지 비교
+						if (event.currentTarget.dataset.item === item.dataset.item) {
+							item .querySelector('strong').firstChild.textContent = parseInt(item .querySelector('strong').firstChild.textContent) + 1;
 
-					//장바구니 콜라 생성
-					this.stagedItemGenerator(event.currentTarget);
-					for (const item of this.stagedList) {
+							isStaged = true;
+							break;
+						}
 					}
-					// this.stagedList.forEach(item) {
-					// }
 
+					// 처음 선택한 경우에만 장바구니 생성
+					if (!isSaged) {
+						//장바구니 콜라 생성
+						this.stagedItemGenerator(event.currentTarget);
+					}
+					 // 자판기 콜라 개수 차감
+					targetElPrice.dataset.count--;
+
+					if (!parseInt(targetElPrice.dataset.count) === 0) {
+						targetEl.insertAdjacenHTML('beforeEnd', `
+						<strong class="soldout">
+							<span>품절</span>
+						</strong>
+						`
+						);
+						targetElPrice.disabled = "disabled"
+					}
 				} else {
 					alert('입금한 금액이 부족합니다.');
 				}
 			})
-		})
+		});
+		/**
+		 * 4. 획득 버튼 기능
+		 * 1) 장바구니에 있는 음료수 목록이 획득한 음료 목록으로 이동합니다.
+		 * 2) 획득한 음료의 모든 금액을 합하여 총 금액을 업데이트 합니다.
+		 */
+
+		this.btnGet.addEventListener('click', () => {
+			
+		});
 	}
 }
 

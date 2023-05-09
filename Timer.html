@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>타이머 구현하기</title>
+	<link rel="stylesheet" href="Timer.css">
+</head>
+<body>
+	<div class="wrap">
+		<h1 class="a11y-hidden">weniv-timer</h1>
+		<img class="logo" src="./weniv-logo.png" alt="weniv-logo">
+		<article class="timer">
+			<span class="timer-name">TIMER</span>
+			<div class="inp-container">
+				<div class="inp-time">
+					<label>HRS</label>
+					<input id="hour" placeholder="00">
+				</div>
+				<p>:</p>
+				<div class="inp-time">
+					<label>MIN</label>
+					<input id="minutes" placeholder="00">
+				</div>
+				<p>:</p>
+				<div class="inp-time">
+					<label>SEC</label>
+					<input id="seconds" placeholder="00">
+				</div>
+			</div>
+			<button class="btn-start" type="button">START</button>
+			<button class="btn-reset" type="button">RESET</button>
+		</article>
+		<img class="footer-logo" src="./footer-logo.png" alt="footer-logo">
+	</div>
+	<script src="Timer.js"></script>
+</body>
+</html>

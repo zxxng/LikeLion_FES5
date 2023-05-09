@@ -1,0 +1,104 @@
+/* reset */
+body, div, p, input {
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	vertical-align: top;
+}
+
+button {
+	all: unset;
+}
+
+/* hidden */
+.a11y-hidden {
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+}
+
+body {
+	background: radial-gradient(96.74% 276.79% at 3.59% 5.28%, #F0F4FF 0%, #A5B6EE 100%);
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.wrap {
+	margin: 0 auto;
+	width: 400px;
+	text-align: center;
+}
+
+.logo {
+	width: 244px;
+	height: 48px;
+	margin: 60px 0;
+}
+
+.timer {
+	width: 400px;
+	height: 360px;
+	background: linear-gradient(144.07deg, #5572BB 2.13%, #374B7C 102.97%);
+	box-shadow: 20px 20px 60px 10px #374B7C66;
+	border-radius: 16px;
+}
+
+.timer-name {
+	display: inline-block;
+	font-size: 24px;
+	color: white;
+	padding: 48px 120px 23px 120px;
+	border-bottom: 1px solid #3D538A;;
+}
+
+.footer-logo {
+	width: 104px;
+	height: 15px;
+	margin: 60px;
+}
+
+.inp-container {
+	margin: 30px 0 40px 0;
+	display: flex;
+	gap: 11px;
+	justify-content: center;
+}
+
+.inp-time>label {
+	display: block;
+	font-size: 12px;
+	color: #A5B6EE;
+	margin-bottom: 4px;
+}
+
+.inp-time>input {
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	background: linear-gradient(314.28deg, #304577 0%, #4C65A0 83%),
+linear-gradient(0deg, #354971, #354971);
+	border: 1px solid #354971
+}
+
+.btn-start,
+.btn-reset {
+	width: 112px;
+	height: 48px;
+	background: #324577;
+	border-radius: 50px;
+	color: #617199;
+}
+
+.btn-start {
+	margin-right: 12px;
+}

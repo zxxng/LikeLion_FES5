@@ -1,38 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 </head>
+
 <body>
 	<script>
-		class UltraArray {
-			constructor() {
-				this.data = {}
-				this.length = 0;
-			}
-			push(item) {
-				this.data[this.length] = item;
-				this.length += 1;
-				return this.length
-			}
+		const testArray = [1, 2, 3, 4];
+		testArray.push(5); // O(1)
 
-			pop() {
-				// this[this.length-1] = null;
-				const lastState = this.date[this.length-1]
-				delete this.date[this.length-1];
-				this.length -= 1;
+		testArray.pop(); // O(1)
 
-				return lastState;
-			}
-		}
+		testArray.unshift(0); // O(n)
 
-		const myArray = new UltraArray();
+		testArray.splice(2, 1, 6); // O(1) ~ O(n)
 
-		myArray.pop(2)
-		
+
+
 	</script>
 </body>
+
 </html>

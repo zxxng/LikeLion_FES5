@@ -1,0 +1,13 @@
+header {
+  background-color: #fff;
+}
+
+.header-wrap {
+  width: 1224px;
+  height: 120px;
+  max-width: calc(100% - 60px);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
